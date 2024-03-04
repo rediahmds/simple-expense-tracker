@@ -4,16 +4,13 @@ body {
   font-family: "Inter", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #053b06;
 }
 
-.container {
+.formContainer {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
 }
@@ -26,18 +23,22 @@ label {
   font-weight: bold;
 }
 
-input[type="number"] {
-  width: 100%;
+.textBold {
+  font-weight: bold;
+}
+
+.inputExpense {
+  width: 90%;
   padding: 10px;
   margin-top: 5px;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #91c499;
+  background-color: #053b06;
 }
 
 button {
   padding: 10px 20px;
-  background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -45,7 +46,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #557559;
 }
 
 .expenses {
@@ -62,6 +63,7 @@ h3 {
 
 h1#appTitle {
   text-align: center;
+  padding: 10px 10px;
 }
 
 ul {
@@ -74,11 +76,27 @@ li {
   margin-bottom: 5px;
 }
 
+/* MATERIAL 3 STYLING */
+.textGhostWhite {
+  color: #fafbfa;
+}
+
+.backgroundCeladon {
+  background-color: #91c499;
+}
+
+.textDarkerGreen {
+  color: #051402;
+}
+
+.mainFontInter {
+  font-family: "Inter", Arial, sans-serif;
+}
+
 /* Media Query for Mobile Devices */
 @media (max-width: 600px) {
-  .container {
+  .formContainer {
     max-width: 100%;
-    border-radius: 0;
-    box-shadow: none;
+    margin: 50px 10px;
   }
 }

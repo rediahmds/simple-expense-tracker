@@ -8,14 +8,32 @@
   </head>
   <body>
     <header>
-      <h1 id="appTitle">Expense Tracker</h1>
+      <h1 id="appTitle" class="textGhostWhite">Expense Tracker</h1>
     </header>
     <main>
-      <div class="container">
+      <div class="formContainer textGhostWhite">
         <div class="form">
-          <label for="expense">Enter Expense:</label>
-          <input type="number" id="expense" placeholder="Enter amount" />
-          <button onclick="addExpense()">Add Expense</button>
+          <label for="expenseName">Expense Name:</label>
+          <input
+            type="text"
+            id="expenseName"
+            placeholder="Enter expense name"
+            class="inputExpense textGhostWhite"
+          />
+          <br />
+          <label for="expense">Amount:</label>
+          <input
+            type="number"
+            id="expense"
+            placeholder="Enter amount"
+            class="inputExpense textGhostWhite"
+          />
+          <button
+            onclick="addExpense()"
+            class="backgroundCeladon textDarkerGreen textBold mainFontInter"
+          >
+            Add Expense
+          </button>
         </div>
         <div class="expenses">
           <h2>Expenses:</h2>
@@ -23,7 +41,7 @@
           <h3>Total Expenses: <span id="totalExpense">0.00</span> IDR</h3>
         </div>
       </div>
-      <aside>
+      <aside class="textGhostWhite">
         <article>
           <h2>About Developer</h2>
           <img src="" alt="" />
