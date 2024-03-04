@@ -86,6 +86,12 @@ footer {
   padding: 20px;
 }
 
+.navContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
 /* MATERIAL 3 STYLING */
 .textGhostWhite {
   color: #fafbfa;
@@ -108,5 +114,11 @@ footer {
   .formContainer {
     max-width: 100%;
     margin: 50px 10px;
+  }
+
+  #appLogo {
+    max-width: 100%;
+    height: auto;
+    max-height: 30px;
   }
 }
