@@ -92,6 +92,11 @@ footer {
   padding: 20px;
 }
 
+img#catsImg {
+  max-width: 256px;
+  border-radius: 100%;
+}
+
 /* MATERIAL 3 STYLING */
 .textGhostWhite {
   color: #fafbfa;
@@ -120,5 +125,10 @@ footer {
     max-width: 100%;
     height: auto;
     max-height: 30px;
+  }
+
+  img#catsImg {
+    max-width: 128px;
+    /* border-radius: 100%; */
   }
 }
