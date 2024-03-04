@@ -1,24 +1,29 @@
 let totalExpense = 0;
 
 function addExpense() {
-  const expenseInput = document.getElementById("expense");
-  const expenseAmount = parseFloat(expenseInput.value);
+  const expenseAmountElement = document.getElementById("expense");
+  const expenseNameElement = document.getElementById("expenseName");
 
-  if (isNaN(expenseAmount)) {
+  const expenseAmount = parseFloat(expenseAmountElement.value);
+  const expenseName = expenseNameElement.value;
+
+  if (isNaN(expenseAmount) || expenseAmount <= 0) {
     alert("Please enter a valid expense amount.");
     return;
   }
 
   totalExpense += expenseAmount;
-  updateExpensesList(expenseAmount);
+  updateExpensesList(expenseName, expenseAmount);
   updateTotalExpense();
-  expenseInput.value = "";
+
+  expenseAmountElement.value = "";
+  expenseNameElement.value = "";
 }
 
-function updateExpensesList(amount) {
+function updateExpensesList(name, amount) {
   const expenseList = document.getElementById("expenseList");
   const newExpenseItem = document.createElement("li");
-  newExpenseItem.textContent = `${amount.toFixed(2)} IDR`;
+  newExpenseItem.textContent = `${name} - ${amount.toFixed(2)} IDR`;
   expenseList.appendChild(newExpenseItem);
 }
 
