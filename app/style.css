@@ -27,8 +27,13 @@ label {
   font-weight: bold;
 }
 
+aside {
+  margin: 50px auto;
+  padding: 20px;
+}
+
 .inputExpense {
-  width: 90%;
+  width: 95%;
   padding: 10px;
   margin-top: 5px;
   margin-bottom: 10px;
@@ -74,6 +79,11 @@ ul {
 
 li {
   margin-bottom: 5px;
+}
+
+footer {
+  background-color: #002500;
+  padding: 20px;
 }
 
 /* MATERIAL 3 STYLING */
